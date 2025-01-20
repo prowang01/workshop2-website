@@ -1,3 +1,6 @@
+import fetch from 'node-fetch';
+global.fetch = fetch; // Définit fetch globalement pour que toutes les bibliothèques puissent l'utiliser.
+
 import { PinataSDK } from "pinata-web3";
 import fs from "fs";
 import path from "path";
