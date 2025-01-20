@@ -18,7 +18,16 @@ jobs:
           node-version: 16
 
       - name: Install dependencies
-        run: npm install pinata-web3
+        run: |
+          npm install pinata-web3
+          npm install node-fetch
+
+      - name: Upload site to Pinata
+        run: |
+          node upload_site.js
+        env:
+          PINATA_JWT: ${{ secrets.PINATA_JWT }}
+
 
       - name: Upload site to Pinata
         run: |
