@@ -1,0 +1,8 @@
+{
+  "name": "workshop2",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "pinata-web3": "^latest"
+  }
+}
